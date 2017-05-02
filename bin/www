@@ -1,0 +1,9 @@
+#!/usr/bin/nodejs
+var debug = require('debug')('my-application');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 3000);//app.set('port', 8080) is similar to setting a "variable" named port to 8080, which you can access later on using app.get('port'). Accessing your website from the browser will really not work because you still didn't tell your app to listen and accept connections.
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});

@@ -1,0 +1,17 @@
+{
+  "name": "mean-customer-curd-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "express": "~4.0.0",
+    "mysql": "^2.12.0",
+    "nodemon": "^1.11.0",
+    "underscore": "^1.8.3"
+  }
+}

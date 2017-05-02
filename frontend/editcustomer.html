@@ -1,0 +1,53 @@
+<div class="page-data" ng-controller="customers">
+    <form method="post" ng-submit="saveEdit(final2.id);">
+        <table cellpadding="11">
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    :
+                    <input name="name" ng-model="final2.name" required="" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    Address
+                </td>
+                <td valign="top">
+                    :
+                    <textarea cols="30" name="address" ng-model="final2.address" required="" rows="5" value="editData.address">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    :
+                    <input name="email" ng-model="final2.email" required="" type="text" value="editData.email"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone
+                </td>
+                <td>
+                    :
+                    <input name="phone" ng-model="final2.contact_no" required="" type="text" value="editData.contact_no"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input name="submit" type="submit" value="Save">
+                        <input class="cancel" name="cancel" ng-click="cancelAdd()" type="button" value="Cancel">
+                        </input>
+                    </input>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,66 @@
+<div class="page-data" ng-controller="customers">
+    <div class="data-btn">
+        <a href="#addcustomer" ng-click="addUser();">
+            Add
+        </a>
+    </div>
+    <div class="data-table">
+        <table border="1" cellpadding="7" cellspacing="7">
+            <tr>
+                <th width="50px">
+                    No
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Phone
+                </th>
+                <th width="120px">
+                    Action
+                </th>
+            </tr>
+            <tr ng-repeat="user in tableData">
+                <td>
+                    <span>
+                        {{ user.id }}
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        {{ user.name }}
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        {{ user.address}}
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        {{ user.email }}
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        {{ user.contact_no }}
+                    </span>
+                </td>
+                <td>
+                    <button class="remove" ng-click="deletecustomer(user.id)">
+                        Delete
+                    </button>
+                    <button ng-click="edit(user)">
+                        Update
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
