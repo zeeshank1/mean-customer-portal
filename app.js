@@ -1,7 +1,7 @@
 const express    = require('express');
 const path       = require('path');
 const bodyParser = require('body-parser');//To parse POST payload params
-const session    = require('express-session');
+// const session    = require('express-session');
 const routes     = require('./routes/index');
 const mysql      = require('mysql');
 require('./config/server');
