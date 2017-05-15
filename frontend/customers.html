@@ -1,13 +1,14 @@
 <div class="page-data" ng-controller="customers">
     <div class="data-btn">
-        <a href="#addcustomer" ng-click="addUser();">
+        <button class='button'><a href="#addcustomer" ng-click="addUser();">
             Add
-        </a>
+        </a></button>
     </div>
+
     <div class="data-table">
-        <table border="1" cellpadding="7" cellspacing="7">
+        <table border="1"  class='tg' >
             <tr>
-                <th width="50px">
+                <th>
                     No
                 </th>
                 <th>
@@ -22,7 +23,7 @@
                 <th>
                     Phone
                 </th>
-                <th width="120px">
+                <th>
                     Action
                 </th>
             </tr>
@@ -64,3 +65,22 @@
         </table>
     </div>
 </div>
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;width:90%;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;width:50px;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-3we0{background-color:#ffffff;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.button {
+    background-color: ##b9c9fe; /* Green */
+    border: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>

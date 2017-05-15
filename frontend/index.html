@@ -6,11 +6,44 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js">
         </script>
         <script src="app.js">
-        <script src="app/customer/app.js">
+            <script src="app/customer/app.js">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js">
         </script>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.ico">
     </head>
-    <div ng-view="">
-    </div>
+
+
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="header-content">
+                    Header
+                </div>
+            </div>
+            <div id="content">
+                <div id="sidebar">
+                    Sidebar
+                    <br/>
+                    Sidebar
+                    <br/>
+                    Sidebar
+                    <br/>
+                </div>
+                <div id="main">
+                    <div ng-view="">
+                    </div>
+                </div>
+            </div>
+            <div class="push">
+            </div>
+        </div>
+        <div id='footer'><div id='footer-content'>Footer</div></div>
+            
+
+    </body>
+
+
 </html>
