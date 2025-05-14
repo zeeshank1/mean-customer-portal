@@ -1,4 +1,4 @@
-```markdown
+
 # MEAN Customer App
 
 ## Overview
@@ -25,5 +25,3 @@ If you would like to contribute to this project, please follow these steps:
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a pull request.
 
-## License
-This project is licensed under the MI
